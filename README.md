@@ -29,7 +29,6 @@ The scores are comparable with state-of-the-art results on [GOT-10k leaderboard]
 | UAV20L        | 0.423            | 0.572            |
 | DTB70         | 0.493            | 0.731            |
 | TColor128     | 0.510            | 0.691            |
-| NfS (30 fps)  | -                | -                |
 | NfS (240 fps) | 0.520            | 0.624            |
 
 
@@ -50,34 +49,34 @@ pip install got10k
 
 ## Training the tracker
 
-1. Setup the training dataset in `tools/train.py`. Default is the GOT-10k dataset located at `~/data/GOT-10k`.
+1. Setup the training dataset in `train.py`. Default is the GOT-10k dataset located at `~/data/GOT-10k`.
 
 2. Run:
 
 ```
-python tools/train.py
+python train.py
 ```
 
 ## Evaluate the tracker
 
-1. Setup the tracking dataset in `tools/test.py`. Default is the OTB dataset located at `~/data/OTB`.
+1. Setup the tracking dataset in `test.py`. Default is the OTB dataset located at `~/data/OTB`.
 
-2. Setup the checkpoint path of your pretrained model. Default is `pretrained/siamfc_alexnet_e50.pth`.
+2. Setup the checkpoint path of your pretrained model. Default is `siamfc_alexnet_e50.pth`.
 
 3. Run:
 
 ```
-python tools/test.py
+python test.py
 ```
 
 ## Running the demo
 
-1. Setup the sequence path in `tools/demo.py`. Default is `~/data/OTB/Crossing`.
+1. Setup the sequence path in `demo.py`. Default is `~/data/OTB/Crossing`.
 
-2. Setup the checkpoint path of your pretrained model. Default is `pretrained/siamfc_alexnet_e50.pth`.
+2. Setup the checkpoint path of your pretrained model. Default is `siamfc_alexnet_e50.pth`.
 
 3. Run:
 
 ```
-python tools/demo.py
+python demo.py
 ```
